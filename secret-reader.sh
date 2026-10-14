@@ -14,3 +14,5 @@ fi
  #we are giving in the env for runtime to this password
  export mysql_root_password=$ROOT_PASSWORD
  rm /secrets/mysql-secret.txt #remove file
+
+ exec /usr/local/bin/docker-entrypoint.sh mysqld
