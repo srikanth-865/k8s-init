@@ -24,8 +24,8 @@ spec:
       tier: db
       component: mysql
  spec:
-   serviceAccountName: roboshop-mysql
-   initContainers: #init container
+    serviceAccountName: roboshop-mysql
+    initContainers: #init container
      - name: secret-reader #name 
        image: amazon/aws-cli #AWS official image
        command:
