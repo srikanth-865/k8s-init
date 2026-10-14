@@ -42,7 +42,7 @@ spec:
          mountPath: /secrets     
     containers:
      - name: mysql
-       image: srikanth865/mysql:5.0.0
+       image: srikanth865/mysql:5.0.1
        imagePullPolicy: Always
        volumeMounts:
        - name: mysql-secret

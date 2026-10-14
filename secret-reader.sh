@@ -12,7 +12,7 @@ if [ -f /secrets/mysql-secret.txt ]; then
     exit 1
 fi  
  #we are giving in the env for runtime to this password
- export mysql_root_password=$ROOT_PASSWORD
+ export MYSQL_ROOT_PASSWORD=$ROOT_PASSWORD
  rm /secrets/mysql-secret.txt #remove file
 
  exec /usr/local/bin/docker-entrypoint.sh mysqld
