@@ -47,8 +47,8 @@ spec:
        - name: mysql-secret
          mountPath: /secrets
  volumes:
-      - name: mysql-secret
-        emptyDir: {}
+    - name: mysql-secret
+      emptyDir: {}
 ---
 
 apiVersion: v1
