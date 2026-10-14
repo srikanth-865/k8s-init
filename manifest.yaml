@@ -40,13 +40,13 @@ spec:
        volumeMounts:
        - name: mysql-secret
          mountPath: /secrets     
-   containers:
+    containers:
      - name: mysql
        image: srikanth865/mysql:5.0.0
        volumeMounts:
        - name: mysql-secret
          mountPath: /secrets
-   volumes:
+ volumes:
       - name: mysql-secret
         emptyDir: {}
 ---
