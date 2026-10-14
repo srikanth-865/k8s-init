@@ -20,10 +20,10 @@ spec:
     name: mysql
     namespace: roboshop
     labels:
-      project: roboshop
-      tier: db
-      component: mysql
- spec:
+        project: roboshop
+        tier: db
+        component: mysql
+   spec:
     serviceAccountName: roboshop-mysql
     initContainers: #init container
      - name: secret-reader #name 
